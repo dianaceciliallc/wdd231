@@ -74,10 +74,6 @@ nav ul li a {
     color: var(--primary-dark);
 }
 
-nav ul li a:hover {
-    color: var(--accent-hover);
-}
-
 nav ul.show {
     display: flex;
 }
@@ -162,10 +158,6 @@ section {
     text-decoration: none;
 }
 
-.filters li a:hover {
-    color: var(--accent-hover);
-}
-
 .courses-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -210,6 +202,8 @@ footer,
     color: var(--primary-dark);
 }
 
-#lastModified:hover {
+#lastModified:hover,
+.filters li a:hover,
+nav ul li a:hover {
     color: var(--accent-hover);
 }
