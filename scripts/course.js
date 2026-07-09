@@ -82,54 +82,37 @@ const courses_wrapper = document.querySelector('.courses-wrapper');
 const filterOpt = document.querySelectorAll('.filter-opt');
 const credits_span = document.querySelector('.credits');
 
-const troughCourses = function (courses) {
+const updateCredits = (arr) => {
+    let total = arr.reduce( (accumulator, course) => accumulator + course.credits, 0 );
+    credits_span.textContent = `${total}`;
+};
+
+const showCourses = (arr) => {
     let course_cards = ""
     
-    courses.forEach((course, i) => {
+    arr.forEach((course) => {
         const statusClass = course.completed ? 'completed' : 'incomplete';
-        
-        course_cards += `
-                    <div class="course-card ${statusClass}">
-                        <h2>${course.subject}${course.number}</h2>
-                    </div>`
+        course_cards += `<div class="course-card ${statusClass}"><h2>${course.subject}${course.number}</h2></div>`;
     });
 
     return courses_wrapper.innerHTML = course_cards
-}
+};
 
-function filteredCourses(courses) {
+const filteredCourses = (arr) => {
     filterOpt.forEach((opt) => {
         opt.addEventListener(('click'), (e) => {
             e.preventDefault();
+            const filterBy = opt.textContent.trim();
 
-            let courses_filtered = [];
-            let filterBy = opt.textContent.trim();
-            
-            if (filterBy === 'WDD Courses') {
-                courses_filtered = courses.filter(course => { 
-                    return course.subject == "WDD"
-                })
-            }
-            else if (filterBy === 'CSE Courses') {
-                courses_filtered = courses.filter(course => { 
-                    return course.subject == "CSE";
-                })
-            }
-            else {
-                courses_filtered = courses;
-            }
-
-            troughCourses(courses_filtered);
-
-            let totalCredits = 0;
-            courses_filtered.forEach(course => {
-                totalCredits += course.credits;
-            });
-            
-            credits_span.textContent = `The total credits for listed above is ${totalCredits}`;
+            let filtered = filterBy === 'WDD Courses' ? arr.filter( c => c.subject === 'WDD') : 
+                            filterBy === 'CSE Courses' ? arr.filter( c => c.subject === 'CSE'):
+                            arr;
+            showCourses(filtered);
+            updateCredits(filtered);
         })
     })
 }
 
-troughCourses(courses);
+updateCredits(courses)
+showCourses(courses);
 filteredCourses(courses);

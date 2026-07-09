@@ -22,13 +22,18 @@
 
 <body>
     <header>
-        <span>WDD231</span>
-        <a id="menu" href="#">&#9776;</a>
+        <div class="logo">
+            <a href="index.html">
+            <img src="images/logo.svg" alt="Diana Llerena Logo" width="30" height="30">
+        </a>
+        <span>Diana Llerena</span>
+        </div>
+        <a id="menu" href="#" aria-label="Open navigation menu">&#9776;</a>
         <nav class="navigation">
             <ul class="navigation__options">
-                <li><a href="#" target="_blank" rel="noopener">Home</a></li>
-                <li><a href="#" target="_blank" rel="noopener">Chamber</a></li>
-                <li><a href="#" target="_blank" rel="noopener">Final</a></li>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Final</a></li>
             </ul>
         </nav>
     </header>
@@ -47,7 +52,7 @@
         <section class="scnd-sct">
             <h2 class="label-sct">Student Photo</h2>
             <img src="images/diana-llerena-profile.jpeg" alt="Diana Llerena Profile Photo" width="200" height="150"
-                loading="lazy">
+                fetchpriority="high">
         </section>
 
         <section class="third-sct">
@@ -60,17 +65,17 @@
                 </ul>
             </div>
             <div class="courses-wrapper"></div>
-            <span class="credits"></span>
+            <p>The total credits for listed above is <span class="credits"></span></p>
         </section>
     </main>
 
     <footer>
         <ul>
             <li><a href="https://github.com/dianaceciliallc/wdd231" target="_blank">
-                    <img src="images/icon-github.png" alt="Github Icon Image"  width="50" height="50" loading="lazy">
+                    <img src="images/icon-github.png" alt="GitHub Profile"  width="50" height="50" loading="lazy">
                 </a></li>
             <li><a href="https://www.linkedin.com/in/dianaceciliallc/" target="_blank">
-                    <img src="images/icon-linkedin.png" alt="LinkedIn Icon Image"  width="50" height="50" loading="lazy">
+                    <img src="images/icon-linkedin.png" alt="LinkedIn Profile"  width="50" height="50" loading="lazy">
                 </a></li>
         </ul>
         <p>©<span id="currentyear"></span> 🧝🏻‍♀️ Diana Llerena 🧝🏻‍♀️ Lima, Perú</p>

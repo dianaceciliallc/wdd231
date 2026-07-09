@@ -2,6 +2,7 @@
     --primary-dark: #0A192F;
     --primary-light: #E6EDF6;
     --accent-hover: #4A90E2;
+    --active: #8F2D56;
 }
 
 * {
@@ -21,7 +22,8 @@ body {
 
 header, footer {
     width: 100%;
-    color: var(--primary-light);
+    color: var(--primary-dark);
+    background-color: var(--primary-light);
 }
 
 header {
@@ -29,14 +31,21 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 8vh;
-    padding: 0 2rem;
-    background-color: var(--primary-dark);
+    padding: 0 2rem 0 2rem;
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
 }
 
 header span,
 #menu {
     width: 50%;
-    color: var(--primary-light);
+    color: var(--primary-dark);
 }
 
 #menu {
@@ -60,7 +69,7 @@ nav ul {
     flex-direction: column;
     list-style: none;
     text-align: center;
-    background-color: var(--primary-light);
+    background-color: var(--primary-dark);
 }
 
 nav ul li a,
@@ -71,7 +80,12 @@ header span {
 }
 
 nav ul li a {
-    color: var(--primary-dark);
+    color: var(--primary-light);
+}
+
+nav ul li a.active {
+    text-decoration: underline;
+    color: var(--accent-hover);
 }
 
 nav ul.show {
