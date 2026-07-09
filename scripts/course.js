@@ -109,6 +109,9 @@ const filteredCourses = (arr) => {
                             arr;
             showCourses(filtered);
             updateCredits(filtered);
+
+            filterOpt.forEach(btn => btn.parentElement.classList.remove('active-filter'));
+            opt.parentElement.classList.add('active-filter');
         })
     })
 }
