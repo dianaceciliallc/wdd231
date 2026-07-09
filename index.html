@@ -1,11 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD231</title>
+    <meta name="author" content="Diana C. Llerena">
+    <meta name="description"
+        content="WDD 231 – Web Frontend Development I - Diana C. Llerena: This page is a little look into my life in Lima and my web dev journey for WDD 231.">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
 </head>
+
 <body>
-    <h1>Test file</h1>
+    <header>
+        <span>WDD231</span>
+        <a id="menu" href="#">&#9776;</a>
+        <nav class="navigation">
+            <ul class="navigation__options">
+                <li><a href="#" target="_blank" rel="noopener">Home</a></li>
+                <li><a href="#" target="_blank" rel="noopener">Chamber</a></li>
+                <li><a href="#" target="_blank" rel="noopener">Final</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <section class="first-sct">
+            <h2 class="label-sct">About Me</h2>
+            <p>
+                I'm <strong>Diana Llerena</strong>, a 23-year-old <strong>Software Development</strong>
+                student from Lima, Peru. I'm passionate about building modern web applications
+                and constantly learning new technologies to grow in the tech industry.
+            </p>
+        </section>
+
+        <section class="scnd-sct">
+            <h2 class="label-sct">Student Photo</h2>
+            <img src="images/diana-llerena-profile.jpeg" alt="Diana Llerena Profile Photo" width="200" height="150"
+                loading="lazy">
+        </section>
+
+        <section class="third-sct">
+            <h2 class="label-sct">Web Certificate Courses</h2>
+            <div class="filters">
+                <ul>
+                    <li><a href="#" class="filter-opt">All Courses</a></li>
+                    <li><a href="#" class="filter-opt">WDD Courses</a></li>
+                    <li><a href="#" class="filter-opt">CSE Courses</a></li>
+                </ul>
+            </div>
+            <div class="courses-wrapper"></div>
+            <span class="credits"></span>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="https://github.com/dianaceciliallc/wdd231" target="_blank">
+                    <img src="images/icon-github.png" alt="Github Icon Image"  width="50" height="50" loading="lazy">
+                </a></li>
+            <li><a href="https://www.linkedin.com/in/dianaceciliallc/" target="_blank">
+                    <img src="images/icon-linkedin.png" alt="LinkedIn Icon Image"  width="50" height="50" loading="lazy">
+                </a></li>
+        </ul>
+        <p>©<span id="currentyear"></span> 🧝🏻‍♀️ Diana Llerena 🧝🏻‍♀️ Lima, Perú</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>
