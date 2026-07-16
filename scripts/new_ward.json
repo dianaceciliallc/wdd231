@@ -1,0 +1,46 @@
+{
+    "ward": "New Ward",
+    "families": [
+        {
+            "family_name": "Llerena",
+            "move_in_date": "2026-05-15",
+            "family_size": 3,
+            "visited_by_bishopric": true,
+            "members": [
+                {
+                    "name": "Diana Llerena",
+                    "gender": "Female",
+                    "birthdate": "2002-08-04"
+                },
+                {
+                    "name": "Bryan Llerena",
+                    "gender": "Male",
+                    "birthdate": "1998-12-10"
+                },
+                {
+                    "name": "Dayam Llerena",
+                    "gender": "Female",
+                    "birthdate": "1999-03-15"
+                }
+            ]
+        },
+        {
+            "family_name": "Smith",
+            "move_in_date": "2026-06-01",
+            "family_size": 2,
+            "visited_by_bishopric": false,
+            "members": [
+                {
+                    "name": "John Smith",
+                    "gender": "Male",
+                    "birthdate": "1980-03-10"
+                },
+                {
+                    "name": "Jane Smith",
+                    "gender": "Female",
+                    "birthdate": "1982-11-25"
+                }
+            ]
+        }
+    ]
+}

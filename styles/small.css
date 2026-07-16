@@ -173,12 +173,12 @@ section {
 }
 
 .filters li.active-filter {
-    background-color: var(--primary-light);
+    background-color: var(--primary-dark);
     border: 3px solid var(--accent-hover);
 }
 
 .filters li.active-filter a {
-    color: var(--accent-hover);
+    color: #ffffff;
     font-weight: 800;
 }
 
