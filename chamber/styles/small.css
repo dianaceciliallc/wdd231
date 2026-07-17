@@ -146,9 +146,9 @@ footer p {
 }
 
 /* class selectors */
-.card {
-  width: 320px;
-  height: 320px;
+.company--card {
+  width: 100%;
+  height: auto;
   text-align: center;
   padding: 1rem;
   background-color: #ffffff;
@@ -172,4 +172,37 @@ footer p {
   border: none;
   font-weight: 600;
   font-size: 18px;
+}
+
+.cards--wrap {
+  margin: 3rem 3rem;
+}
+
+.cards--wrap.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.cards--wrap.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.company-info--wrapper {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.company-info--wrapper img {
+  width: 50%;
+  height: 50%;
+}
+
+.company-info--wrapper ul {
+  list-style: none;
+  text-align: justify;
 }
