@@ -1,0 +1,175 @@
+:root {
+  --text-color: #1A2530;
+  --bg-color: #F8EBED;
+  --primary-pink: #8A5C5E;
+  --primary-blue: #2C588B;
+  --secondary-pink: #F4CED1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  /* alignment */
+  display: flex;
+  flex-direction: column;
+
+  line-height: 1.5;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+header,
+footer {
+  color: var(--primary-blue);
+  background-color: var(--secondary-pink);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+header {
+  /* alignment */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo-enterprise--wrap {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  width: 50%;
+}
+
+header span,
+#menu {
+  width: 50%;
+  color: var(--primary-blue);
+}
+
+#menu {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+nav {
+  display: block;
+}
+
+nav ul {
+  right: 0;
+  top: 4.3rem;
+  width: 100%;
+  padding: 1rem;
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  text-align: center;
+  background-color: var(--bg-color);
+  border-bottom: 1px solid var(--primary-pink);
+}
+
+nav ul li a,
+header span {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+nav ul li a {
+  color: var(--primary-light);
+}
+
+nav ul li a.active {
+  text-decoration: underline;
+  color: var(--text-color);
+}
+
+nav ul.show {
+  display: flex;
+}
+
+.mode {
+  margin-left: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+
+  background: linear-gradient(to right, black 50%, white 50%);
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+main {
+  flex: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+h1 {
+  font-weight: 600;
+  color: var(--primary-blue);
+  font-weight: 800;
+}
+
+footer {
+  /* alignment */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+footer p {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.social--wrap ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+/* class selectors */
+.card {
+  width: 320px;
+  height: 320px;
+  text-align: center;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.order-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.order-cards button {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 20px;
+  color: #ffffff;
+  background-color: var(--primary-blue);
+  border: none;
+  font-weight: 600;
+  font-size: 18px;
+}

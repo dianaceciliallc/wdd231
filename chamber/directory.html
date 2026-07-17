@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber | WDD 231: Web Frontend Development I</title>
+    <meta name="description" content="Support local and find the services you need. Explore our official Chamber of Commerce directory to connect with trusted local businesses and organizations.">
+    <meta name="author" content="Diana Llerena">
+    <meta property="og:title" content="Business Directory | Chamber of Commerce">
+    <meta property="og:description" content="Support local and find the services you need. Explore our official Chamber of Commerce directory to connect with trusted local businesses.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/members.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-enterprise--wrap">
+            <a href="#"><img src="images/logo.svg"></a>
+            <span>Chamber of Commerce</span>
+        </div>
+
+        <a id="menu" href="#" aria-label="Open navigation menu">&#9776;</a>
+        <nav class="navigation">
+            <ul class="navigation__options">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+        <button class="mode"></button>
+    </header>
+
+    <main>
+        <h1>Directory</h1>
+
+        <section>
+            <div class="order-cards">
+                <button>Grid</button>
+                <button>List</button>
+            </div>
+
+            <div class="cards--wrap">
+                <div class="card">
+                    <h2>Business Name</h2>
+                    <p>Tag line</p>
+                    <div>
+                        <img>
+                        <p>EMAIL: sdjhfkjds</p>
+                        <p>PHONE: 930843290840</p>
+                        <p>URL: ashfslahf</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3>Chamber of Commerce</h3>
+        <div class="site--info">
+            <p>Direción</p>
+            <p>info@commerce.org</p>
+            <p>numero</p>
+        </div>
+        <div class="social--wrap">
+            <ul>
+                <li><a href=""><img src="images/icons8-youtube.png"></a></li>
+                <li><a href=""><img src="images/icons8-twitter.png"></a></li>
+                <li><a href=""><img src="images/icons8-linkedin.png"></a></li>
+            </ul>
+        </div>
+        <div class="course--info">
+            <p>WDD231 Class Project</p>
+            <p>Diana Llerena</p>
+            <p>© <span id="currentyear"></span> Chamber of Commerce</p>
+            <p>Last Modification <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

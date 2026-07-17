@@ -1,0 +1,35 @@
+@media screen and (min-width: 730px) {
+
+    header {
+        justify-content: space-evenly;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    nav ul {
+        display: flex;
+        right: 0;
+        top: 0;
+        width: auto;
+        padding: 0;
+        position: static;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 2rem;
+        background-color: var(--secondary-pink);
+        border-bottom: none;
+    }
+
+    footer {
+        /* alignment */
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

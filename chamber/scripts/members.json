@@ -1,0 +1,67 @@
+{
+    "companies": [
+        {
+            "company_name": "Ochana Pastelería Fina",
+            "address": "Av. Larco 450, Lima, Perú",
+            "phone": "+51 987 654 321",
+            "website": "https://www.ochana.pe",
+            "image": "ochana_logo.png",
+            "membership_level": 3,
+            "description": "Premium fine pastries and specialized catering services."
+        },
+        {
+            "company_name": "TechSolve Solutions",
+            "address": "Calle Tech 123, Lima, Perú",
+            "phone": "+51 1 234 5678",
+            "website": "https://www.techsolve.pe",
+            "image": "techsolve_logo.png",
+            "membership_level": 2,
+            "description": "IT consulting and software development for small businesses."
+        },
+        {
+            "company_name": "Green Leaf Landscaping",
+            "address": "Jr. Jardines 890, Lima, Perú",
+            "phone": "+51 999 888 777",
+            "website": "https://www.greenleaf.pe",
+            "image": "greenleaf_logo.png",
+            "membership_level": 1,
+            "description": "Sustainable gardening and landscape architecture design."
+        },
+        {
+            "company_name": "Andean Textiles",
+            "address": "Av. Artesanías 200, Cusco, Perú",
+            "phone": "+51 84 123 456",
+            "website": "https://www.andeantextiles.pe",
+            "image": "andean_textiles.png",
+            "membership_level": 3,
+            "description": "High-quality, ethically sourced alpaca wool garments."
+        },
+        {
+            "company_name": "Summit Construction Group",
+            "address": "Calle Edificios 505, Lima, Perú",
+            "phone": "+51 1 998 877 665",
+            "website": "https://www.summitconst.pe",
+            "image": "summit_logo.png",
+            "membership_level": 2,
+            "description": "Commercial and residential construction services."
+        },
+        {
+            "company_name": "Llerena Legal Services",
+            "address": "Av. Justicia 333, Lima, Perú",
+            "phone": "+51 1 777 666 555",
+            "website": "https://www.llerenalegal.pe",
+            "image": "legal_firm.png",
+            "membership_level": 1,
+            "description": "Corporate law and business establishment consulting."
+        },
+        {
+            "company_name": "Sunrise Fitness Center",
+            "address": "Calle Energía 101, Lima, Perú",
+            "phone": "+51 912 345 678",
+            "website": "https://www.sunrisefitness.pe",
+            "image": "fitness_center.png",
+            "membership_level": 3,
+            "description": "State-of-the-art gym with nutrition coaching and group classes."
+        }
+    ]
+}
