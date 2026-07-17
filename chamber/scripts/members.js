@@ -13,7 +13,7 @@ listBtn.addEventListener("click", () => {
     cards.classList.remove("grid");
 });
 
-const displayMembers = (members) => {
+/* const displayMembers = (members) => {
     members.forEach(member => {
         let card = document.createElement('div');
         card.className = 'company--card';
@@ -35,8 +35,8 @@ const displayMembers = (members) => {
         portrait.setAttribute('src', member.image);
         portrait.setAttribute('alt', `Logo of ${member.company_name}`);
         portrait.setAttribute('loading', 'lazy');
-        portrait.setAttribute('width', '340');
-        portrait.setAttribute('height', '440');
+        portrait.setAttribute('width', '200');
+        portrait.setAttribute('height', '200');
 
 
         wrapper.classList = 'company-info--wrapper';
@@ -44,6 +44,53 @@ const displayMembers = (members) => {
         list.appendChild(address);
         list.appendChild(phone)
         
+        wrapper.appendChild(list);
+        
+        card.appendChild(name);
+        card.appendChild(web);
+        card.appendChild(wrapper);
+
+        cards.appendChild(card);
+    });
+} */
+
+const displayMembers = (members) => {
+    // Limpia el contenedor antes de agregar nada (por si acaso)
+    cards.innerHTML = ''; 
+
+    members.forEach(member => {
+        let card = document.createElement('div');
+        card.className = 'company--card';
+
+        let name = document.createElement('h2');
+        let web = document.createElement('a'); // Ahora sí funcionará
+        let wrapper = document.createElement('div');
+        let list = document.createElement('ul');
+        let address = document.createElement('li');
+        let phone = document.createElement('li');
+        let portrait = document.createElement('img');
+        
+        name.textContent = member.company_name;
+        
+        // Corregido:
+        web.textContent = member.website;
+        web.setAttribute('href', member.website); 
+        web.setAttribute('target', '_blank');
+        
+        address.textContent = `Address: ${member.address}`;
+        phone.textContent = `Phone: ${member.phone}`;
+        
+        portrait.setAttribute('src', member.image);
+        portrait.setAttribute('alt', `Logo of ${member.company_name}`);
+        portrait.setAttribute('loading', 'lazy');
+        portrait.setAttribute('width', '200');
+        portrait.setAttribute('height', '200');
+
+        wrapper.classList.add('company-info--wrapper'); // Corregido: classList.add
+        wrapper.appendChild(portrait);
+        
+        list.appendChild(address);
+        list.appendChild(phone);
         wrapper.appendChild(list);
         
         card.appendChild(name);

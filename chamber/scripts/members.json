@@ -5,7 +5,7 @@
             "address": "Av. Larco 450, Lima, Perú",
             "phone": "+51 987 654 321",
             "website": "https://www.ochana.pe",
-            "image": "ochana_logo.png",
+            "image": "https://github.com/dianaceciliallc/wdd231/blob/main/chamber/images/pastry.jpg",
             "membership_level": 3,
             "description": "Premium fine pastries and specialized catering services."
         },
@@ -14,7 +14,7 @@
             "address": "Calle Tech 123, Lima, Perú",
             "phone": "+51 1 234 5678",
             "website": "https://www.techsolve.pe",
-            "image": "techsolve_logo.png",
+            "image": "https://github.com/dianaceciliallc/wdd231/blob/main/chamber/images/tech.jpg?raw=true",
             "membership_level": 2,
             "description": "IT consulting and software development for small businesses."
         },
