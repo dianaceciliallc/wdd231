@@ -20,19 +20,24 @@ const displayMembers = (members) => {
         card.className = 'company--card';
 
         let name = document.createElement('h2');
+        let description = document.createElement('p');
         let web = document.createElement('a');
+
         let wrapper = document.createElement('div');
         let list = document.createElement('ul');
         let address = document.createElement('li');
         let phone = document.createElement('li');
+        let webList = document.createElement('li');
+
         let portrait = document.createElement('img');
         
         name.textContent = member.company_name;
-        
+    
         web.textContent = member.website;
         web.setAttribute('href', member.website); 
         web.setAttribute('target', '_blank');
         
+        description.textContent = `${member.description}`;
         address.textContent = `Address: ${member.address}`;
         phone.textContent = `Phone: ${member.phone}`;
         
@@ -44,13 +49,15 @@ const displayMembers = (members) => {
 
         wrapper.classList.add('company-info--wrapper');
         wrapper.appendChild(portrait);
-        
+
+        webList.appendChild(web);
         list.appendChild(address);
         list.appendChild(phone);
+        list.appendChild(webList);
         wrapper.appendChild(list);
         
         card.appendChild(name);
-        card.appendChild(web);
+        card.appendChild(description);
         card.appendChild(wrapper);
 
         cards.appendChild(card);
