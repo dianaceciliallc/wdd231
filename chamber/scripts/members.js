@@ -4,18 +4,21 @@ const gridBtn = document.querySelector("#gridBtn");
 const listBtn = document.querySelector("#listBtn");
 
 gridBtn.addEventListener("click", () => {
+    gridBtn.classList.add('active');
     cards.classList.add("grid");
     cards.classList.remove("list");
+    listBtn.classList.remove('active');
 });
 
 listBtn.addEventListener("click", () => {
     cards.classList.add("list");
     cards.classList.remove("grid");
+    listBtn.classList.add('active');
+    gridBtn.classList.remove('active');
 });
 
 const displayMembers = (members) => {
-    members.forEach(member => {
-        console.log(member.url)
+    members.forEach((member, i) => {
         let card = document.createElement('div');
         card.className = 'company--card';
 
@@ -43,9 +46,13 @@ const displayMembers = (members) => {
         
         portrait.setAttribute('src', member.url);
         portrait.setAttribute('alt', `Logo of ${member.company_name}`);
-        portrait.setAttribute('fetchpriority', 'high');
-        portrait.setAttribute('width', '200');
-        portrait.setAttribute('height', '200');
+        if (i < 2) {
+            portrait.setAttribute('fetchpriority', 'high');
+        } else {
+            portrait.setAttribute('loading', 'lazy');
+        }
+        portrait.setAttribute('width', '120');
+        portrait.setAttribute('height', '120');
 
         wrapper.classList.add('company-info--wrapper');
         wrapper.appendChild(portrait);
