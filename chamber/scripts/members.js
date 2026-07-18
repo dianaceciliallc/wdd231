@@ -1,4 +1,4 @@
-const url = 'https://raw.githubusercontent.com/dianaceciliallc/wdd231/main/chamber/scripts/members.json';
+const url = 'https://raw.githubusercontent.com/dianaceciliallc/wdd231/main/chamber/data/members.json';
 const cards = document.querySelector('.cards--wrap');
 const gridBtn = document.querySelector("#gridBtn");
 const listBtn = document.querySelector("#listBtn");
