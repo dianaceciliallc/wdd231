@@ -5,7 +5,7 @@
             "address": "Av. Larco 450, Lima, Perú",
             "phone": "+51 987 654 321",
             "website": "https://www.ochana.pe",
-            "img": "https://github.com/dianaceciliallc/wdd231/blob/main/chamber/images/pastry-enterprise.webp?raw=true",
+            "url": "https://github.com/dianaceciliallc/wdd231/blob/main/chamber/images/pastry-enterprise.webp?raw=true",
             "membership_level": 3,
             "description": "Premium fine pastries and specialized catering services."
         },
@@ -14,7 +14,7 @@
             "address": "Calle Tech 123, Lima, Perú",
             "phone": "+51 1 234 5678",
             "website": "https://www.techsolve.pe",
-            "img": "https://github.com/dianaceciliallc/wdd231/blob/main/chamber/images/tech-enterprise.webp?raw=true",
+            "url": "https://github.com/dianaceciliallc/wdd231/blob/main/chamber/images/tech-enterprise.webp?raw=true",
             "membership_level": 2,
             "description": "IT consulting and software development for small businesses."
         },
@@ -23,7 +23,7 @@
             "address": "Jr. Jardines 890, Lima, Perú",
             "phone": "+51 999 888 777",
             "website": "https://www.greenleaf.pe",
-            "img": "https://github.com/dianaceciliallc/wdd231/blob/main/chamber/images/green-leaf-enterprise.webp?raw=true",
+            "url": "https://github.com/dianaceciliallc/wdd231/blob/main/chamber/images/green-leaf-enterprise.webp?raw=true",
             "membership_level": 1,
             "description": "Sustainable gardening and landscape architecture design."
         },
@@ -32,7 +32,7 @@
             "address": "Av. Artesanías 200, Cusco, Perú",
             "phone": "+51 84 123 456",
             "website": "https://www.andeantextiles.pe",
-            "img": "https://github.com/dianaceciliallc/wdd231/blob/main/chamber/images/textil-enterprise.webp?raw=true",
+            "url": "https://github.com/dianaceciliallc/wdd231/blob/main/chamber/images/textil-enterprise.webp?raw=true",
             "membership_level": 3,
             "description": "High-quality, ethically sourced alpaca wool garments."
         },
@@ -41,7 +41,7 @@
             "address": "Calle Edificios 505, Lima, Perú",
             "phone": "+51 1 998 877 665",
             "website": "https://www.summitconst.pe",
-            "img": "https://github.com/dianaceciliallc/wdd231/blob/main/chamber/images/construction-enterprise.webp?raw=true",
+            "url": "https://github.com/dianaceciliallc/wdd231/blob/main/chamber/images/construction-enterprise.webp?raw=true",
             "membership_level": 2,
             "description": "Commercial and residential construction services."
         },
@@ -50,7 +50,7 @@
             "address": "Av. Justicia 333, Lima, Perú",
             "phone": "+51 1 777 666 555",
             "website": "https://www.llerenalegal.pe",
-            "img": "https://github.com/dianaceciliallc/wdd231/blob/main/chamber/images/legal-enterprise.webp?raw=true",
+            "url": "https://github.com/dianaceciliallc/wdd231/blob/main/chamber/images/legal-enterprise.webp?raw=true",
             "membership_level": 1,
             "description": "Corporate law and business establishment consulting."
         },
@@ -59,7 +59,7 @@
             "address": "Calle Energía 101, Lima, Perú",
             "phone": "+51 912 345 678",
             "website": "https://www.sunrisefitness.pe",
-            "img": "https://github.com/dianaceciliallc/wdd231/blob/main/chamber/images/fitness-enterprise.webp?raw=true",
+            "url": "https://github.com/dianaceciliallc/wdd231/blob/main/chamber/images/fitness-enterprise.webp?raw=true",
             "membership_level": 3,
             "description": "State-of-the-art gym with nutrition coaching and group classes."
         }

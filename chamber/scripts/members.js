@@ -15,7 +15,7 @@ listBtn.addEventListener("click", () => {
 
 const displayMembers = (members) => {
     members.forEach(member => {
-        console.log(member)
+        console.log(member.url)
         let card = document.createElement('div');
         card.className = 'company--card';
 
@@ -41,7 +41,7 @@ const displayMembers = (members) => {
         address.textContent = `Address: ${member.address}`;
         phone.textContent = `Phone: ${member.phone}`;
         
-        portrait.setAttribute('src', member.img);
+        portrait.setAttribute('src', member.url);
         portrait.setAttribute('alt', `Logo of ${member.company_name}`);
         portrait.setAttribute('fetchpriority', 'high');
         portrait.setAttribute('width', '200');
