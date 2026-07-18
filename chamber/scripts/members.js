@@ -38,7 +38,7 @@ const displayMembers = (members) => {
         
         portrait.setAttribute('src', member.img);
         portrait.setAttribute('alt', `Logo of ${member.company_name}`);
-        portrait.setAttribute('loading', 'lazy');
+        portrait.setAttribute('fetchpriority', 'high');
         portrait.setAttribute('width', '200');
         portrait.setAttribute('height', '200');
 
