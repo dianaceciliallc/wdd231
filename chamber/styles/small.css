@@ -132,6 +132,12 @@ footer {
   padding: 1rem;
 }
 
+footer p:first-of-type {
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--primary-blue);
+}
+
 footer p {
   color: var(--text-color);
   font-weight: 400;
