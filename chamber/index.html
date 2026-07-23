@@ -6,7 +6,7 @@
     <title>Chamber Directory | WDD 231: Web Frontend Development I</title>
     <meta name="description" content="Support local and find the services you need. Explore our official Chamber of Commerce directory to connect with trusted local businesses and organizations.">
     <meta name="author" content="Diana Llerena">
-    <meta property="og:title" content="Business Directory | Chamber of Commerce">
+    <meta property="og:title" content="Business Home Page | Chamber of Commerce">
     <meta property="og:description" content="Support local and find the services you need. Explore our official Chamber of Commerce directory to connect with trusted local businesses.">
     <meta property="og:image" content="https://dianaceciliallc.github.io/wdd231/chamber/images/logo.svg">
     <meta property="og:url" content="https://dianaceciliallc.github.io/wdd231/chamber/directory.html">
@@ -22,7 +22,8 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/members.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/members-spotlight.js" defer></script>
 </head>
 <body>
     <header>
@@ -44,21 +45,63 @@
     </header>
 
     <main>
-        <h1>Directory</h1>
-
-        <section>
-            <div class="order-cards">
-                <button id="gridBtn" class="active">Grid</button>
-                <button id="listBtn">List</button>
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 1024px)" srcset="images/hero-large.jpg">
+                <source media="(min-width: 768px)" srcset="images/hero-medium.jpg">
+                <img src="images/hero.jpg" alt="Panoramic view of the commercial business district" class="hero-image" width="1200" height="500">
+            </picture>
+            <div class="hero-overlay">
+                <h1>Empowering Regional Business</h1>
+                <p>Connect, collaborate, and thrive within our established enterprise network.</p>
+                <a href="#" class="cta-button">Join the Chamber</a>
             </div>
+        </section>
 
-            <div class="cards--wrap grid">
-            </div>
+        <div class="home-grid">
+            <section class="card">
+                <h2>Current Events</h2>
+                <div>
+                    <article class="event-item">
+                        <h3>Annual Networking Symposium</h3>
+                        <p class="event-date">📅 August 15, 2026 | 9:00 AM</p>
+                        <p>Connect with regional industry leaders and explore emerging market trends at the Convention Center.</p>
+                    </article>
+                    <article class="event-item">
+                        <h3>Small Business Marketing Workshop</h3>
+                        <p class="event-date">📅 August 28, 2026 | 2:00 PM</p>
+                        <p>Master digital wayfinding, SEO, and social media engagement to drive local foot traffic.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Local Weather</h2>
+                <div class="weather-current">
+                    <figure>
+                        <img id="weather-icon" src="" alt="Weather condition icon">
+                        <figcaption>...</figcaption>
+                    </figure>
+                    <div class="temp-display">
+                        <p>Current:</p>
+                        <p id="current-temp" class="temp-value">--°C</p>
+                    </div>
+                </div>
+                <div class="weather-forecast">
+                    <h3>3-Day Forecast</h3>
+                    <div id="forecast-container" class="forecast-grid"></div>
+                </div>
+            </section>
+        </div>
+
+        <section class="spotlights-section">
+            <h2>Member Spotlights</h2>
+            <div class="spotlight-container" id="spotlight-cards"></div>
         </section>
     </main>
 
     <footer>
-        <div class="site--info">
+        <div>
             <p>Chamber of Commerce</p>
             <p>Av. Larco 450, Miraflores, Lima, Perú</p>
             <address>info@commerce.org</address>
@@ -71,7 +114,7 @@
                 <li><a href="https://www.linkedin.com/in/dianaceciliallc/" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn Profile" width="50" height="50" loading="lazy"></a></li>
             </ul>
         </div>
-        <div class="course--info">
+        <div>
             <p>WDD231 Class Project</p>
             <p>🧝🏻‍♀️ Diana Llerena 🧝🏻‍♀️ Lima, Perú</p>
             <p>© <span id="currentyear"></span> Chamber of Commerce</p>
