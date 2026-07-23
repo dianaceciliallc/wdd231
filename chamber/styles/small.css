@@ -119,9 +119,8 @@ main {
 }
 
 h1 {
-  font-weight: 600;
-  color: var(--primary-blue);
   font-weight: 800;
+  color: var(--primary-blue);
 }
 
 footer {
